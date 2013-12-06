@@ -1,12 +1,17 @@
+.center-content{
+	text-align: center;
+}
+
 #mc_embed_signup {
-    border: 1px solid rgb(95, 102, 43);
     background: none repeat scroll 0% 0% rgb(135, 150, 55);
     text-align: center !important;
+    border-radius: 3px;
     font-size: 14px;
     margin-left: -85px;
-    padding: 5px;
+    padding: 5px 15px 5px 15px;
     margin: 0 auto;
     display: block;
+    display: inline-block;
 }
 
 #header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer, .region-page-closure {
@@ -34,9 +39,43 @@ body, caption, th, td, input, textarea, select, option, legend, fieldset {
 	padding-left: 10px;
 	border-radius: 3px;
 	font-size: 18px;
+	border: 2px solid rgb(189, 195, 199);
+	color: rgb(52, 73, 94);
+	background-color: rgb(255, 255, 255);
+	font-size: 15px;
+	border-radius: 6px;
+	box-shadow: none;
+	transition: all 0.25s linear 0s;
+        transition-property: all;
+        transition-duration: 0.25s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+}
+
+#mce-EMAIL:focus{
+	border: 2px solid #2980b9;
 }
 
 #subscribe-label{
 	font-size: 18px;
 	color: white;
+}
+
+#mc-embedded-subscribe{
+	height:30px;
+	color: white;
+	cursor: pointer;
+	font-size: 15px;
+	background-color: #e67e22;
+	border-radius: 6px;
+	border: 2px solid rgb(189, 195, 199);
+	transition: all 0.25s linear 0s;
+        transition-property: all;
+        transition-duration: 0.25s;
+        transition-timing-function: linear;
+        transition-delay: 0s;
+}
+
+#mc-embedded-subscribe:hover{
+	background-color: #d35400;
 }
