@@ -1,0 +1,42 @@
+#mc_embed_signup {
+    border: 1px solid rgb(95, 102, 43);
+    background: none repeat scroll 0% 0% rgb(135, 150, 55);
+    text-align: center !important;
+    font-size: 14px;
+    margin-left: -85px;
+    padding: 5px;
+    margin: 0 auto;
+    display: block;
+}
+
+#header, #content, #navigation, .region-sidebar-first, .region-sidebar-second, #footer, .region-page-closure {
+    word-wrap: break-word;
+}
+
+#skip-link, #page {
+    font-size: 0.75em;
+    line-height: 1.333em;
+}
+
+html, body {
+    font-family: "Arial",Georgia,Serif !important;
+}
+
+body, caption, th, td, input, textarea, select, option, legend, fieldset {
+    font-family: Verdana,Tahoma,"DejaVu Sans",sans-serif;
+}
+
+#mce-EMAIL{
+	width: 250px;
+	height: 30px;
+	margin-left: 10px;
+	margin-right: 10px;
+	padding-left: 10px;
+	border-radius: 3px;
+	font-size: 18px;
+}
+
+#subscribe-label{
+	font-size: 18px;
+	color: white;
+}
