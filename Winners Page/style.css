@@ -2,8 +2,8 @@ h1{
 	font-family: sans-serif;
 }
 
-.winner-block{
-	width: 45%;
-	height: 200px;
-	background-image: src('');
+
+.text-wrapper{
+	text-align: center;
 }
+

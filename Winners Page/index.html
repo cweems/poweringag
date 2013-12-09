@@ -1,21 +1,76 @@
 <html>
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
 <head>
 </head>
 
-<h1>2013 Winners</h1>
 <div class="container">
+<h1>Powering Agriculture 2013 Winners</h1>
 
-<div class="winner-block col-md-4">
-	<div class="cover">
-		<div class="inner-wrapper">
+<!--First Section-->
+
+<div class="winner-block col-md-4 col-sm-12">
+	<div class="cover well">
+			<img src="img/Camco-resized.jpg" alt="KGM" class="img-circle center-block" width="125px" height="auto">
+		<div class="text-wrapper center-block">
+			<h3>Camco Clean Energy</h3>
+			<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Learn More</button>
 		</div>
 	</div>
 </div>
 
+
+<!--End First Section-->
+
+<div class="winner-block col-md-4 col-sm-12">
+	<div class="cover well">
+			<img src="img/EcoConsult-resized.png" alt="KGM" class="img-circle center-block" width="125px" height="auto">
+		<div class="text-wrapper center-block">
+			<h3>Camco Clean Energy</h3>
+			<a id="pop" href="#" class="btn btn-success" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?"
+    >Learn More</a>
+		</div>
+	</div>
+</div>
+
+<div class="winner-block col-md-4 col-sm-12">
+	<div class="cover well">
+			<img src="img/Earth-resized.jpg" alt="KGM" class="img-circle center-block" width="125px" height="auto">
+		<div class="text-wrapper center-block">
+			<h3>Camco Clean Energy</h3>
+			<a id="pop" href="#" class="btn btn-success" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?"
+    >Learn More</a>
+		</div>
+	</div>
 </div>
 
 
+<!-- Modal 1-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+        <h4 class="modal-title" id="myModalLabel">Camco Clean Energy</h4>
+      </div>
+      <div class="modal-body">
+        ...
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
+      </div>
+    </div><!-- /.modal-content -->
+  </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+
+</div>
+
+<script>
+	$('[data-toggle="popover"]').popover({
+    trigger: 'hover',
+        'placement': 'top'
+	});
+</script>
 </html>
