@@ -1,3 +1,6 @@
 function mainCtrl($scope, $http){
-	$scope.Filter = {name : 'Camco'};
+	$http.get('content/items.json').success(function(data) {
+    $scope.winners = data; //Loads content items
+    $scope.Filter = {name : ''};
+  });
 }

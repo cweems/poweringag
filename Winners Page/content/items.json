@@ -1,6 +1,68 @@
 [
-	{
-		"name" : "Camco Clean Energy",
-		"location" : "Kenya"
-	},
+    {
+        "name":"African Bamboo",
+
+        "location":"Ethiopia", 
+        "img": "bamboo.png", 
+        "modalId": "1"
+    },
+    {
+        "name":"Camco Clean Energy", 
+        "location":"Benin & Tanzania", 
+        "img": "Camco-resized.jpg", 
+        "modalId": "2"
+    },
+    {
+        "name":"Earth Institute", 
+        "location":"Senegal", 
+        "img": "Earth-resized.jpg", 
+        "modalId": "3"
+    },
+    {
+        "name":"Earth Spark", 
+        "location":"Haiti", 
+        "img": "earthspark-resized.jpg", 
+        "modalId": "4"
+    },
+    {
+        "name":"Experience International", 
+        "location":"Indonesia", "img": "experience-resized.jpg",
+        "modalId": "5"
+    },
+    {   
+        "name":"iDE",
+        "location":"Honduras, Nepal & Zambia",
+        "img": "iDE-resized.jpg",
+        "modalId": "6"
+    },
+    {    "name":"Motivo Engineering",
+         "location":"India",
+         "img": "motivo-resized.jpg",
+         "modalId": "7"
+    },
+    {    "name":"Eco Consult",
+         "location":"Jordan",
+         "img": "EcoConsult-resized.png",
+         "modalId": "8"
+    },
+    {    "name":"Rebound Technology",
+         "location":"Mozambique",
+         "img": "rebound-resized.png",
+         "modalId": "9"
+    },
+    {    "name":"Promethian",
+         "location":"India",
+         "img": "Promethian-resized.jpg",
+         "modalId": "10"
+    },
+    {    "name":"SunDanzer Refrigeration",
+         "location":"Kenya",
+         "img": "SunDanzer-resized.png",
+         "modalId": "11"
+    },
+    {    "name":"Smallholder Fortunes & Thermogen",
+         "location":"Uganda",
+         "img": "fortunes-resized.jpg",
+         "modalId": "12"
+    }
 ]

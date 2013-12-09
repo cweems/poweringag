@@ -1,4 +1,4 @@
-<html ng-app>
+<html ng-app ng-controller="mainCtrl">
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
 	<script src="http://code.angularjs.org/1.2.4/angular.min.js"></script>
@@ -17,10 +17,10 @@
 <br>
 
 <ul class="nav nav-tabs nav-justified">
-  <li><a href="#home" data-toggle="tab" ng-click="Filter:"><h3>All</h3></a></li>
-  <li><a href="#profile" data-toggle="tab"><h3>Category 1</h3></a></li>
-  <li><a href="#messages" data-toggle="tab"><h3>Category 2</h3></a></li>
-  <li><a href="#settings" data-toggle="tab"><h3>Category 3</h3></a></li>
+  <li><a href="#home" data-toggle="tab" ng-click="Filter = {name : ''};"><h3>All</h3></a></li>
+  <li><a href="#profile" data-toggle="tab" ng-click="Filter = {name : 'Earth'};"><h3>Category 1</h3></a></li>
+  <li><a href="#messages" data-toggle="tab" ng-click="Filter = {name : 'b'};"><h3>Category 2</h3></a></li>
+  <li><a href="#settings" data-toggle="tab" ng-click="Filter = {name : 'c'};"><h3>Category 3</h3></a></li>
 </ul>
 
 <div class="tab-content">
@@ -36,21 +36,9 @@
 <br>
 
 <!--First Section-->
-<div ng-init="winners = [{name:'African Bamboo', location:'Ethiopia', img: 'bamboo.png', modalId: '1'},
-                             {name:'Camco Clean Energy', location:'Benin & Tanzania', img: 'Camco-resized.jpg', modalId: '2'},
-                             {name:'Earth Institute', location:'Senegal', img: 'Earth-resized.jpg', modalId: '3'},
-                             {name:'Earth Spark', location:'Haiti', img: 'earthspark-resized.jpg', modalId: '4'},
-                             {name:'Experience International', location:'Indonesia', img: 'experience-resized.jpg', modalId: '5'},
-                             {name:'iDE', location:'Honduras, Nepal & Zambia', img: 'iDE-resized.jpg', modalId: '6'},
-                             {name:'Motivo Engineering', location:'India', img: 'motivo-resized.jpg', modalId: '7'},
-                             {name:'Eco Consult', location:'Jordan', img: 'EcoConsult-resized.png', modalId: '8'},
-                             {name:'Rebound Technology', location:'Mozambique', img: 'rebound-resized.png', modalId: '9'},
-                             {name:'Promethian', location:'India', img: 'Promethian-resized.jpg', modalId: '10'},
-                             {name:'SunDanzer Refrigeration', location:'Kenya', img: 'SunDanzer-resized.png', modalId: '11'},
-                             {name:'Smallholder Fortunes & Thermogen', location:'Uganda', img: 'fortunes-resized.jpg', modalId: '12'}]"></div>
 
 
-<div class="winner-block col-md-4 col-sm-12" ng-repeat="winner in winners | filter:Filter">
+<div class="winner-block col-md-4 col-sm-12" ng-animate="{enter: 'view-enter'}" ng-repeat="winner in winners | filter:Filter | orderBy:modalId">
 	<div class="cover well">
 			<img src="img/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px">
 		<div class="text-wrapper center-block">

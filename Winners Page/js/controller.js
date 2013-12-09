@@ -1,3 +1,6 @@
 function mainCtrl($scope, $http){
-	$scope.Filter = {name : 'Camco'};
+	$http.get('content/items.json').success(function(data) {
+    $scope.items = data; //Loads content items
+    $scope.Filter = {name : 'Camco'}; //Sets filter for first section
+  });
 }
