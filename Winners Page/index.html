@@ -1,4 +1,4 @@
-<html>
+<html ng-app>
 	<link rel="stylesheet" type="text/css" href="style.css"></link>
 	<link rel="stylesheet" type="text/css" href="css/bootstrap.css"></link>
 	<script src="http://code.angularjs.org/1.2.4/angular.min.js"></script>
@@ -16,14 +16,27 @@
 <br>
 
 <!--First Section-->
+<div ng-init="winners = [{name:'African Bamboo', location:'Ethiopia', img: 'bamboo.png', modalId: '1'},
+                             {name:'Camco Clean Energy', location:'Benin & Tanzania', img: 'Camco-resized.jpg', modalId: '2'},
+                             {name:'Earth Institute', location:'Senegal', img: 'Earth-resized.jpg', modalId: '3'},
+                             {name:'Earth Spark', location:'Haiti', img: 'earthspark-resized.jpg', modalId: '4'},
+                             {name:'Experience International', location:'Indonesia', img: 'experience-resized.jpg', modalId: '5'},
+                             {name:'iDE', location:'Honduras, Nepal & Zambia', img: 'iDE-resized.jpg', modalId: '6'},
+                             {name:'Motivo Engineering', location:'India', img: 'motivo-resized.jpg', modalId: '7'},
+                             {name:'Eco Consult', location:'Jordan', img: 'EcoConsult-resized.png', modalId: '8'},
+                             {name:'Rebound Technology', location:'Mozambique', img: 'rebound-resized.png', modalId: '9'},
+                             {name:'Promethian', location:'India', img: 'Promethian-resized.jpg', modalId: '10'},
+                             {name:'SunDanzer Refrigeration', location:'Kenya', img: 'SunDanzer-resized.png', modalId: '11'},
+                             {name:'Smallholder Fortunes & Thermogen', location:'Uganda', img: 'fortunes-resized.jpg', modalId: '12'}]"></div>
 
-<div class="winner-block col-md-4 col-sm-12">
+
+<div class="winner-block col-md-4 col-sm-12" ng-repeat="winner in winners">
 	<div class="cover well">
-			<img src="img/Camco-resized.jpg" alt="KGM" class="img-circle center-block" width="125px" height="auto">
+			<img src="img/{{winner.img}}" alt="Camco Clean Energy Picture" class="img-circle center-block" width="125px" height="125px">
 		<div class="text-wrapper center-block">
-			<h3>Camco Clean Energy</h3>
-			<h4><span class="glyphicon glyphicon-map-marker"></span> Kenya</h4>
-			<button class="btn btn-success" data-toggle="modal" data-target="#myModal">Learn More</button>
+			<h4>{{winner.name}}</h4>
+			<h5><span class="glyphicon glyphicon-map-marker"></span> {{winner.location}}</h5>
+			<button class="btn btn-success" data-toggle="modal" data-target="#{{winner.modalId}}">Learn More</button>
 		</div>
 	</div>
 </div>
@@ -31,39 +44,19 @@
 
 <!--End First Section-->
 
-<div class="winner-block col-md-4 col-sm-12">
-	<div class="cover well">
-			<img src="img/EcoConsult-resized.png" alt="KGM" class="img-circle center-block" width="125px" height="auto">
-		<div class="text-wrapper center-block">
-			<h3>Camco Clean Energy</h3>
-			<a id="pop" href="#" class="btn btn-success" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?"
-    >Learn More</a>
-		</div>
-	</div>
-</div>
-
-<div class="winner-block col-md-4 col-sm-12">
-	<div class="cover well">
-			<img src="img/Earth-resized.jpg" alt="KGM" class="img-circle center-block" width="125px" height="auto">
-		<div class="text-wrapper center-block">
-			<h3>Camco Clean Energy</h3>
-			<a id="pop" href="#" class="btn btn-success" data-toggle="popover" data-content="And here's some amazing content. It's very engaging. right?"
-    >Learn More</a>
-		</div>
-	</div>
-</div>
+    
 
 
 <!-- Modal 1-->
-<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+<div ng-repeat="winner in winners" class="modal fade" id="{{winner.modalId}}" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
   <div class="modal-dialog">
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-        <h4 class="modal-title" id="myModalLabel">Camco Clean Energy</h4>
+        <h4 class="modal-title" id="myModalLabel">{{winner.name}}</h4>
       </div>
       <div class="modal-body">
-        ...
+        {{winner.modalContent}}
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>
@@ -72,12 +65,7 @@
   </div><!-- /.modal-dialog -->
 </div><!-- /.modal -->
 
+
 </div>
 
-<script>
-	$('[data-toggle="popover"]').popover({
-    trigger: 'hover',
-        'placement': 'top'
-	});
-</script>
 </html>
