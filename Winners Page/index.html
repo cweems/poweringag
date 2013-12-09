@@ -4,15 +4,35 @@
 	<script src="http://code.angularjs.org/1.2.4/angular.min.js"></script>
 	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
 	<script src="js/bootstrap.js"></script>
+	<script src="js/controllers.js"></script>
 <head>
 </head>
 
 <div class="container">
 <h1>Powering Agriculture 2013 Winners</h1>
-<div class="input-group col-md-4 col-sm-12">
-  <span class="input-group-addon">Search</span>
-  <input type="text" class="form-control" placeholder="e.g. Clean Energy">
+<br>
+<p>
+	In its inaugural round, 30 finalists out of 475 applications from 80 countries were selected to compete in the final stage of the Powering Agriculture Grand Challenge. Of these 30 applicants, 12 were selected by the partners to travel to Washington DC for the Powering Agriculture Grand Challenge Winners Announcement and DevelopmentXChange on December 10-11, 2013. The winners received seed grants of between $800,000 and $1.5 million to continue developing their research and innovations. Learn more about their exciting work below!
+</p>
+<br>
+
+<ul class="nav nav-tabs nav-justified">
+  <li><a href="#home" data-toggle="tab" ng-click="Filter:"><h3>All</h3></a></li>
+  <li><a href="#profile" data-toggle="tab"><h3>Category 1</h3></a></li>
+  <li><a href="#messages" data-toggle="tab"><h3>Category 2</h3></a></li>
+  <li><a href="#settings" data-toggle="tab"><h3>Category 3</h3></a></li>
+</ul>
+
+<div class="tab-content">
+  <div class="tab-pane fade active" id="home"> </div>
+  <div class="tab-pane fade" id="profile"><br><p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p></div>
+  <div class="tab-pane fade" id="messages"><br><p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. </p></div>
+  <div class="tab-pane fade" id="settings"><br><p>Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p></div>
 </div>
+
+
+
+<br>
 <br>
 
 <!--First Section-->
@@ -30,12 +50,12 @@
                              {name:'Smallholder Fortunes & Thermogen', location:'Uganda', img: 'fortunes-resized.jpg', modalId: '12'}]"></div>
 
 
-<div class="winner-block col-md-4 col-sm-12" ng-repeat="winner in winners">
+<div class="winner-block col-md-4 col-sm-12" ng-repeat="winner in winners | filter:Filter">
 	<div class="cover well">
-			<img src="img/{{winner.img}}" alt="Camco Clean Energy Picture" class="img-circle center-block" width="125px" height="125px">
+			<img src="img/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px">
 		<div class="text-wrapper center-block">
 			<h4>{{winner.name}}</h4>
-			<h5><span class="glyphicon glyphicon-map-marker"></span> {{winner.location}}</h5>
+			<h4><small><span class="glyphicon glyphicon-map-marker"></span> {{winner.location}}</small></h4>
 			<button class="btn btn-success" data-toggle="modal" data-target="#{{winner.modalId}}">Learn More</button>
 		</div>
 	</div>
