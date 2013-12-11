@@ -4,65 +4,77 @@
 
         "location":"Ethiopia", 
         "img": "bamboo.png", 
-        "modalId": "1"
+        "modalId": "1",
+        "category" : "Processing"
     },
     {
         "name":"Camco Clean Energy", 
         "location":"Benin & Tanzania", 
         "img": "Camco-resized.jpg", 
-        "modalId": "2"
+        "modalId": "2",
+        "category" : "Power"
     },
     {
         "name":"Earth Institute", 
         "location":"Senegal", 
         "img": "Earth-resized.jpg", 
-        "modalId": "3"
+        "modalId": "3",
+        "category" : "Irrigation"
     },
     {
         "name":"Earth Spark", 
         "location":"Haiti", 
         "img": "earthspark-resized.jpg", 
-        "modalId": "4"
+        "modalId": "4",
+        "category" : "Power"
     },
     {
         "name":"Experience International", 
         "location":"Indonesia", "img": "experience-resized.jpg",
-        "modalId": "5"
+        "modalId": "5",
+        "category" : "CE"
     },
     {   
         "name":"iDE",
         "location":"Honduras, Nepal & Zambia",
         "img": "iDE-resized.jpg",
-        "modalId": "6"
+        "modalId": "6",
+        "category" : "Irrigation"
     },
     {    "name":"Motivo Engineering",
          "location":"India",
          "img": "motivo-resized.jpg",
-         "modalId": "7"
+         "modalId": "7",
+         "category" : "Processing"
     },
     {    "name":"Eco Consult",
          "location":"Jordan",
          "img": "EcoConsult-resized.png",
-         "modalId": "8"
+         "modalId": "8",
+         "category" : "Processing"
     },
     {    "name":"Rebound Technology",
          "location":"Mozambique",
          "img": "rebound-resized.png",
-         "modalId": "9"
+         "modalId": "9",
+         "category" : "CE"
     },
     {    "name":"Promethian",
          "location":"India",
          "img": "Promethian-resized.jpg",
-         "modalId": "10"
+         "modalId": "10",
+         "category" : "CE"
     },
     {    "name":"SunDanzer Refrigeration",
          "location":"Kenya",
          "img": "SunDanzer-resized.png",
-         "modalId": "11"
+         "modalId": "11",
+         "category" : "CE"
     },
     {    "name":"Smallholder Fortunes & Thermogen",
          "location":"Uganda",
          "img": "fortunes-resized.jpg",
-         "modalId": "12"
+         "modalId": "12",
+         "category" : "CE"
     }
 ]
