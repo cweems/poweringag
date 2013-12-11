@@ -32,7 +32,7 @@
         "name":"Experience International", 
         "location":"Indonesia", "img": "experience-resized.jpg",
         "modalId": "5",
-        "category" : "CE"
+        "category" : "Clean"
     },
     {   
         "name":"iDE",
@@ -57,24 +57,24 @@
          "location":"Mozambique",
          "img": "rebound-resized.png",
          "modalId": "9",
-         "category" : "CE"
+         "category" : "Clean"
     },
     {    "name":"Promethian",
          "location":"India",
          "img": "Promethian-resized.jpg",
          "modalId": "10",
-         "category" : "CE"
+         "category" : "Clean"
     },
     {    "name":"SunDanzer Refrigeration",
          "location":"Kenya",
          "img": "SunDanzer-resized.png",
          "modalId": "11",
-         "category" : "CE"
+         "category" : "Clean"
     },
     {    "name":"Smallholder Fortunes & Thermogen",
          "location":"Uganda",
          "img": "fortunes-resized.jpg",
          "modalId": "12",
-         "category" : "CE"
+         "category" : "Clean"
     }
 ]
