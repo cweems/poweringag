@@ -221,7 +221,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap requires jQuery");+func
 
 <script type="text/javascript">
 function mainCtrl($scope, $http){
-  $http.get('content/items.json').success(function(data) {
+  $http.get('sites/default/files/items.json').success(function(data) {
     $scope.winners = data; //Loads content items
     $scope.Filter = {name : ''};
   });
@@ -259,7 +259,7 @@ function mainCtrl($scope, $http){
 
 <div class="winner-block col-md-4 col-sm-12" ng-animate="{enter: 'view-enter'}" ng-repeat="winner in winners | filter:Filter | orderBy:modalId">
 	<div class="cover well">
-			<img src="img/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px">
+			<img src="/sites/default/files/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px">
 		<div class="text-wrapper center-block">
 			<h4>{{winner.name}}</h4>
 			<h4><small><span></span> {{winner.location}}</small></h4>
