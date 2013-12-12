@@ -285,7 +285,7 @@ function mainCtrl($scope, $http){
         <h4 class="modal-title" id="myModalLabel">{{winner.name}}</h4>
       </div>
       <div class="modal-body">
-        {{winner.modalContent}}
+      	<div ng-bind-html="{winner.modalContent}"></div>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-success" data-dismiss="modal">Close</button>

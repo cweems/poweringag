@@ -1,75 +1,85 @@
 [
     {
         "name":"African Bamboo",
-
         "location":"Ethiopia", 
         "img": "bamboo.png", 
         "modalId": "1",
-        "category" : "Processing"
+        "category" : "Processing",
+        "modalContent" : "<html><h3>Biomass-Powered Thermal Processing of Ethiopian Bamboo</h3><br><p><em>Awardee:</em> African Bamboo PLC (Ethiopia).</p><p><em>Collaborator(s):</em> Heartland Global (USA)</p><p><em>Location Applied:</em> Southern Nations, Nationalities, and Peoples' Region (SNNPR), Ethiopia</p><p><em>Opportunity:</em> Within Ethiopia, there is over 1 million hectares of bamboo. Recognized as a fast-growing and largely sustainable raw material, there is an increasing global demand for bamboo as a wood substitute for a variety of construction and furnishing applications.  However, bamboo resources are often poorly managed. Most engaged in the industry have limited knowledge of modern value-added processing techniques, which limit their earning potential.  As such, there is an opportunity to use new clean energy technologies in treating bamboo, so a broader market penetration can be achieved.</p><p><em>Clean Energy Solution:</em> African Bamboo is developing an environmentally friendly bamboo thermal modification process called ThermoBoo. Though this chemical-free process, decay factors such as rot and insects are virtually eliminated, and the thermally modified bamboo fiber can then be further processed into sturdy panels that can be marketed to a range of domestic and international buyers. The ThermoBoo process involves the combustion of biomass dust – a technological approach that is completely new to Ethiopia. Through the project’s successful implementation of a pilot processing facility, African Bamboo envisions developing a replicable model that can lead to prospective business opportunities throughout the region.  African Bamboo will continue to work with farmers and processors to ensure the modified bamboo products meet internationally recognized standards.</p><p><em>Impact:</em> The success of this project will develop new opportunities for export, employment, and manufacturing in Ethiopia.  In addition to its socio-economic impact, bamboo cultivation of native species plays a significant role in environmental protection. African Bamboo incorporates environmental impact assessments to ensure continued promotion of bamboo’s environmental benefits and the minimization of the company’s ecological footprint. </p><p>African Bamboo is a forestry, wood, and bio-energy company located in Addis Ababa, Ethiopia. Located amongst Africa’s largest reserves of bamboo, African Bamboo PLC develops innovative applications for bamboo, particularly for industrial and commercial uses. The company was established in 2012 as a subsidiary of Fortune Enterprise PLC which since 1961 has been a manufacturer of wood and metal products in Addis Ababa. </p><p>Website: http://african-bamboo.com</p></html>"
     },
     {
         "name":"Camco Clean Energy", 
         "location":"Benin & Tanzania", 
         "img": "Camco-resized.jpg", 
         "modalId": "2",
-        "category" : "Power"
+        "category" : "Power",
+        "modalContent" : ""
     },
     {
         "name":"Earth Institute", 
         "location":"Senegal", 
         "img": "Earth-resized.jpg", 
         "modalId": "3",
-        "category" : "Irrigation"
+        "category" : "Irrigation",
+        "modalContent" : ""
     },
     {
         "name":"Earth Spark", 
         "location":"Haiti", 
         "img": "earthspark-resized.jpg", 
         "modalId": "4",
-        "category" : "Power"
+        "category" : "Power",
+        "modalContent" : ""
     },
     {
         "name":"Experience International", 
         "location":"Indonesia", "img": "experience-resized.jpg",
         "modalId": "5",
-        "category" : "Clean"
+        "category" : "Clean",
+        "modalContent" : ""
     },
     {   
         "name":"iDE",
         "location":"Honduras, Nepal & Zambia",
         "img": "iDE-resized.jpg",
         "modalId": "6",
-        "category" : "Irrigation"
+        "category" : "Irrigation",
+        "modalContent" : ""
     },
     {    "name":"Motivo Engineering",
          "location":"India",
          "img": "motivo-resized.jpg",
          "modalId": "7",
-         "category" : "Processing"
+         "category" : "Processing",
+         "modalContent" : ""
     },
     {    "name":"Eco Consult",
          "location":"Jordan",
          "img": "EcoConsult-resized.png",
          "modalId": "8",
-         "category" : "Processing"
+         "category" : "Processing",
+         "modalContent" : ""
     },
     {    "name":"Rebound Technology",
          "location":"Mozambique",
          "img": "rebound-resized.png",
          "modalId": "9",
-         "category" : "Clean"
+         "category" : "Clean",
+         "modalContent" : ""
     },
     {    "name":"Promethian",
          "location":"India",
          "img": "Promethian-resized.jpg",
          "modalId": "10",
-         "category" : "Clean"
+         "category" : "Clean",
+         "modalContent" : ""
     },
     {    "name":"SunDanzer Refrigeration",
          "location":"Kenya",
          "img": "SunDanzer-resized.png",
          "modalId": "11",
-         "category" : "Clean"
+         "category" : "Clean",
+         "modalContent" : ""
     },
     {    "name":"Smallholder Fortunes & Thermogen",
          "location":"Uganda",
