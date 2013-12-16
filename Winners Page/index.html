@@ -237,8 +237,8 @@ function mainCtrl($scope, $http){
   <li><a href="#all" data-toggle="tab" ng-click="Filter = {category : ''};"><h5 class="tab-label">All</h5></a></li>
   <li><a href="#irrigation" data-toggle="tab" ng-click="Filter = {category : 'Irrigation'};"><h5 class="tab-label">Irrigation</h5></a></li>
   <li><a href="#processing" data-toggle="tab" ng-click="Filter = {category : 'Processing'};"><h5 class="tab-label">Processing</h5></a></li>
-  <li><a href="#power" data-toggle="tab" ng-click="Filter = {category : 'Power'};"><h5 class="tab-label">Power</h5></a></li>
-  <li><a href="#ce" data-toggle="tab" ng-click="Filter = {category : 'Clean'};"><h5 class="tab-label">Clean Energy</h5></a></li>
+  <li><a href="#power" data-toggle="tab" ng-click="Filter = {category : 'Power'};"><h5 class="tab-label">Decentralized Power</h5></a></li>
+  <li><a href="#ce" data-toggle="tab" ng-click="Filter = {category : 'Clean'};"><h5 class="tab-label">Cold Storage</h5></a></li>
 </ul>
 
 <div class="tab-content">
@@ -283,7 +283,12 @@ function mainCtrl($scope, $http){
         <h4 class="modal-title" id="myModalLabel">{{winner.name}}</h4>
       </div>
       <div class="modal-body">
-      	<img src="/sites/default/files/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px">
+      	<a href="{{winner.website}}"><img src="/sites/defualt/files/{{winner.img}}" alt="{{winner.name}}" class="img-circle center-block" width="125px" height="125px"></a>
+      	<br>
+      	<div style="text-align:center;">
+      	<a id="myModalLabel" href="{{winner.website}}"><h3>{{winner.name}}</h3></a>
+      	<br>
+      	</div>
       	<div ng-bind-html-unsafe="winner.modalContent"></div>
       </div>
       <div class="modal-footer">
