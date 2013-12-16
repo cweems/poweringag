@@ -221,7 +221,7 @@ if("undefined"==typeof jQuery)throw new Error("Bootstrap requires jQuery");+func
 
 <script type="text/javascript">
 function mainCtrl($scope, $http){
-  $http.get('content/items.txt').success(function(data) {
+  $http.get('/sites/default/files/items.txt').success(function(data) {
     $scope.winners = data; //Loads content items
     $scope.Filter = {name : ''};
   });
